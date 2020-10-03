@@ -1,3 +1,5 @@
+//The node server file
+
 import express from "express";
 import renderer from "./helpers/renderer";
 

@@ -4,6 +4,7 @@ import { StaticRouter } from "react-router-dom";
 
 import Routes from "../client/Routes";
 
+//Utility function which renders the component on Server Side
 export default (req) => {
   const content = renderToString(
     <StaticRouter location={req.path} context={{}}>
