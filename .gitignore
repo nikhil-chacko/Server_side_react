@@ -114,3 +114,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+#Server builds
+server/build/bundle.js
+server/public/bundle.js
