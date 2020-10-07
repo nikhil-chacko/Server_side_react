@@ -12,6 +12,5 @@ export default [
   {
     ...UsersListPage,
     path: "/users",
-    component: UsersListPage,
   },
 ];
