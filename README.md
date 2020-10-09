@@ -1,6 +1,6 @@
-## Server Side Rendering With React
+## <p align="center">Server Side Rendering With React</p>
 
-#### This is a simple repository containing Server Side Rendering code with React
+#### <p align="center">This is a simple repository containing Server Side Rendering code with React</p>
 
 **Compile server side**
 
@@ -20,7 +20,7 @@ npm run dev:build-client
 npm run dev:server
 ```
 
-**Paralelly compile and run server**
+**Compile and run server**
 
 ```
 npm run dev
