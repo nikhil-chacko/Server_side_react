@@ -6,10 +6,10 @@ import { Provider } from "react-redux";
 import Routes from "../client/Routes";
 import serialize from "serialize-javascript";
 //Utility function which renders the component on Server Side
-export default (req, store) => {
+export default (req, store, context) => {
   const content = renderToString(
     <Provider store={store}>
-      <StaticRouter location={req.path} context={{}}>
+      <StaticRouter location={req.path} context={context}>
         <div>{renderRoutes(Routes)}</div>
       </StaticRouter>
     </Provider>
