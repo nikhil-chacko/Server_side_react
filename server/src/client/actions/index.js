@@ -1,10 +1,8 @@
-import axios from "axios";
-
 export const FETCH_USERS = "fetch_users";
 
-export const fetchUsers = () => async (dispatch) => {
+export const fetchUsers = () => async (dispatch, getState, api) => {
   try {
-    const res = await axios.get("http://react-ssr-api.herokuapp.com/users");
+    const res = await api.get("/users");
 
     dispatch({
       type: FETCH_USERS,
@@ -13,4 +11,14 @@ export const fetchUsers = () => async (dispatch) => {
   } catch (err) {
     console.log("Some Error Occured");
   }
+};
+
+export const FETCH_CURRENT_USER = "fetch_current_user";
+export const fetchCurrentUser = () => async (dispatch, getState, api) => {
+  const res = await api.get("/current_user");
+
+  dispatch({
+    type: FETCH_CURRENT_USER,
+    payload: res,
+  });
 };
